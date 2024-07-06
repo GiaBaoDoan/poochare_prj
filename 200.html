@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- link gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Montserrat+Alternates:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- link fa  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- link carousel -->
+    <link
+      rel="stylesheet"
+      href="./owlcarosel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owlcarosel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- popup -->
+    <link
+      rel="stylesheet"
+      href="./popup/Magnific-Popup-master/dist/magnific-popup.css"
+    />
+    <!-- reponsive -->
+    <link rel="stylesheet" href="./rps.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body id="myBody">
+    <header id="site-header" class="main__header fixed-top">
+      <div class="container">
+        
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand text-success" href="#">Pooch care </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon fa icon-expand fa-bars" id="bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times" id="closes"></span>
+          </button>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link active" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallerry</a>
+              </li>
+              <li class="nav-item dropdown pages">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav search__right">
+              <li class="nav-item">
+                <a href="#search" class="btn btn-search my-0" id="get">
+                  <span
+                    class="fa fa-search "
+                    aria-hidden="true"
+                  ></span>
+                </a>
+                <div class="pop-overlay" id="search">
+                  <div class="search-popup" id="popup">
+                    <form action="" method="get" class="d-flex">
+                      <input type="search" placeholder="search..." />
+                      <button type="submit" id="s">Search</button>
+                      <a class="close text-white" id="close">x</a>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper d-flex align-items-center">
+                <label class="theme-switch" for="checkbox">
+                  <div class="mode-container">
+                    <button class="btn m-0 p-0" id="switchButton">
+                      <i class="far fa-moon"></i>
+                      <i class="far fa-sun"></i>
+                    </button>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="header-fixed"></div>
+    <!-- carousel -->
+    <section class="carousel">
+      <div class="carousel__content">
+        <div class="owl-carousel owl-one owl-theme">
+          <div class="item">
+            <div class="banner top1 banner__view">
+              <div class="banner__infor">
+                <div class="container">
+                  <div class="banner-infor text-left">
+                    <h5>Quality Things for Loving Pets</h5>
+                    <p>Keeps your Pet Smiling</p>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-boder mt-sm-5 mt-4 mr-2"
+                    >
+                      Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner top2 banner__view">
+              <div class="banner__infor ml-lg-auto">
+                <div class="container">
+                  <div class="banner-infor">
+                    <h5>Delivering happiness for Pets</h5>
+                    <p>Keeps your Pet Smiling</p>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-boder mt-sm-5 mt-4 mr-2"
+                    >
+                      Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner top3 banner__view">
+              <div class="banner__infor">
+                <div class="container">
+                  <div class="banner-infor text-left">
+                    <h5>Quality Things for Loving Pets</h5>
+                    <p>Keeps your Pet Smiling</p>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-boder mt-sm-5 mt-4 mr-2"
+                    >
+                      Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner top4 banner__view">
+              <div class="banner__infor">
+                <div class="container">
+                  <div class="banner-infor ml-lg-auto">
+                    <h5>Quality Things for Loving Pets</h5>
+                    <p>Keeps your Pet Smiling</p>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-style btn-boder mt-sm-5 mt-4 mr-2"
+                    >
+                      Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us -->
+    <section class="about__us py-5">
+      <div class="container py-3">
+        <div class="about__content text-center">
+          <div class="about__text">
+            <h6 class="title">About us</h6>
+            <h3 class="hn-title">We Love Your Pets Like They Are Our Own</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur hic odio voluptatem tenetur consequatur. Vestibulum
+              ante ipsum primis in faucibus orci luctus et ultrices posuere
+              cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+              sodales quis.
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- care your pets -->
+    <section class="petscaring py-5">
+      <div class="container pt-lg-5 pt-md-4 service">
+        <div class="service__content row">
+          <div class="col-lg-4 features col-sm-6">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-snowflake"></i>
+              </div>
+              <h4>
+                <a href="#">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 features col-sm-6">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-cutlery"></i>
+              </div>
+              <h4><a href="#">Healthy Meals</a></h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 features col-sm-6">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-sign-language"></i>
+              </div>
+              <h4><a href="#">Pet Sitting</a></h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 features col-sm-6">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-sitemap"></i>
+              </div>
+              <h4><a href="#">Dog Activities</a></h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 features col-sm-6">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-shower"></i>
+              </div>
+              <h4><a href="#">Pet Daycare</a></h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 features col-sm-6">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-user-md"></i>
+              </div>
+              <h4><a href="#">Pet Grooming</a></h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery py-5">
+      <div class="container py-3 py-md-5">
+        <div class="gallery__content row align-items-center">
+          <div class="glr__img col-lg-6 pl-lg-5 mb-5 mb-lg-0">
+            <img class="img-fluid" src="./img/gallery.png" alt="" />
+          </div>
+          <div class="glr__text col-lg-6">
+            <h6>WHY CHOOSE US</h6>
+            <h3 class="hn-title">What We Offer For You</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,
+              consectetur adipisicingelit.
+            </p>
+            <ul class="list__commit">
+              <li>
+                <i class="fa fa-check"></i>
+                <span>Certified Groomer</span>
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                <span>10 Years of Experience</span>
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                <span>Pet Lover</span>
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                <span>Customer Supports</span>
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                <span>Veterinary Help</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- number -->
+    <section class="number py-5">
+      <div class="container">
+        <div class="number__content row text-center">
+          <div class="col-lg-3 col-6 number__infor mt-lg-0">
+            <p class="counter">730</p>
+            <h4>Happy Clients</h4>
+          </div>
+          <div class="col-lg-3 col-6 number__infor mt-lg-0">
+            <p class="counter">80</p>
+            <h4>Professionals</h4>
+          </div>
+          <div class="col-lg-3 col-6 number__infor mt-5 mt-lg-0">
+            <p class="counter">812</p>
+            <h4>Adopted Pets</h4>
+          </div>
+          <div class="col-lg-3 col-6 number__infor mt-5 mt-lg-0">
+            <p class="counter">90</p>
+            <h4>Awards</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our plans -->
+    <section class="ourplans py-5 text-center">
+      <div class="container pt-lg-4 pb-lg-5">
+        <div class="ourplans__title mb-5">
+          <h6>Our Plans</h6>
+          <h3 class="hn-title">Affordable Packages</h3>
+        </div>
+        <div class="plans__event row">
+          <div class="event__item col-lg-4">
+            <div class="card__event">
+              <div class="card__top">
+                <h6>Free Package</h6>
+                <h4><label>$</label>0<span>/Mounth</span></h4>
+              </div>
+              <div class="card__bottom">
+                <div class="card__bottom-list">
+                  <ul class="list">
+                    <li>5 Dog Walk</li>
+                    <li>3 Vet Visit</li>
+                    <li>3 Pet Spa</li>
+                    <li>Free Supports</li>
+                    <li>Customer Support</li>
+                  </ul>
+                </div>
+                <div class="card__buy">
+                  <a href="#" class="btn btn-success text-white btn-style mt-0">
+                    Buy now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event__item col-lg-4 special__item">
+            <div class="special__event">
+              <div class="special__top text-white">
+                <h5>SAVE 10%</h5>
+                <h6>Standard Package</h6>
+                <h4><label>$</label>39<span>/Mounth</span></h4>
+              </div>
+              <div class="card__bottom special__bottom">
+                <div class="card__bottom-list">
+                  <ul class="list">
+                    <li>5 Dog Walk</li>
+                    <li>3 Vet Visit</li>
+                    <li>3 Pet Spa</li>
+                    <li>Free Supports</li>
+                    <li>Customer Support</li>
+                  </ul>
+                </div>
+                <div class="card__buy">
+                  <a href="#" class="btn btn-success text-white btn-style mt-0">
+                    Buy now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event__item col-lg-4">
+            <div class="card__event">
+              <div class="card__top">
+                <h6>Pro Package</h6>
+                <h4><label>$</label>89<span>/Mounth</span></h4>
+              </div>
+              <div class="card__bottom">
+                <div class="card__bottom-list">
+                  <ul class="list">
+                    <li>5 Dog Walk</li>
+                    <li>3 Vet Visit</li>
+                    <li>3 Pet Spa</li>
+                    <li>Free Supports</li>
+                    <li>Customer Support</li>
+                  </ul>
+                </div>
+                <div class="card__buy">
+                  <a href="#" class="btn btn-success text-white btn-style mt-0">
+                    Buy now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video popup section -->
+    <section class="popup" id="popup">
+      <div class="popup__content py-5">
+        <div class="container py-lg-5">
+          <div class="popup__section text-center">
+            <div class="popup__text">
+              <h6>BETTER PET NUTRITION</h6>
+              <h3 class="hn-title">
+                The Finest Fresh Food And All Your Pet Needs.
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+                ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+                dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+                explicabo officia.
+              </p>
+            </div>
+            <div class="popup__video mt-5">
+              <div class="position-relative">
+                <img
+                  class="img-fluid radius-image"
+                  src="./img/banner2.jpg"
+                  alt=""
+                />
+                <a
+                  href="#small-dialog"
+                  class="position-absolute text-center open-popup-link popup-with-zoom-anim"
+                >
+                  <span class="video-play-icon circle">
+                    <i class="fa fa-play"> </i>
+                  </span>
+                </a>
+                <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                  <iframe
+                    src="https://player.vimeo.com/video/101587706"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen=""
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section class="TESTIMONIALS" id="TESTIMONIALS">
+      <div class="py-5">
+        <div class="container py-lg-4 text-center">
+          <div class="TESTIMONIALS__heading">
+            <h6>TESTIMONIALS</h6>
+            <h3 class="mb-md-5 mb-4">Happy Clients & Feedbacks</h3>
+          </div>
+          <div class="TESTIMONIALS__content">
+            <div id="#owl-demo" class="owl-carousel owl-theme owl-tow">
+              <div class="item">
+                <div class="TESTIMONIALS__item">
+                  <div class="TESTIMONIALS__text">
+                    <blockquote>
+                      <p class="text__lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores
+                        molestias adipisci dolor sit amet!.
+                      </p>
+                    </blockquote>
+                    <div class="author d-flex align-self-center">
+                      <div class="img__author">
+                        <img src="./img/au1.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="people__infor align-self-center">
+                        <h3>John wilson</h3>
+                        <p class="indentity">Example City</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="TESTIMONIALS__item">
+                  <div class="TESTIMONIALS__text">
+                    <blockquote>
+                      <p class="text__lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores
+                        molestias adipisci dolor sit amet!.
+                      </p>
+                    </blockquote>
+                    <div class="author d-flex align-self-center">
+                      <div class="img__author">
+                        <img src="./img/au2.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="people__infor align-self-center">
+                        <h3>Julia sakura</h3>
+                        <p class="indentity">Example City</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="TESTIMONIALS__item">
+                  <div class="TESTIMONIALS__text">
+                    <blockquote>
+                      <p class="text__lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores
+                        molestias adipisci dolor sit amet!.
+                      </p>
+                    </blockquote>
+                    <div class="author d-flex align-self-center">
+                      <div class="img__author">
+                        <img src="./img/au3.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="people__infor align-self-center">
+                        <h3>Roy Linderson</h3>
+                        <p class="indentity">Example City</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="TESTIMONIALS__item">
+                  <div class="TESTIMONIALS__text">
+                    <blockquote>
+                      <p class="text__lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores
+                        molestias adipisci dolor sit amet!.
+                      </p>
+                    </blockquote>
+                    <div class="author d-flex align-self-center">
+                      <div class="img__author">
+                        <img src="./img/au4.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="people__infor align-self-center">
+                        <h3>Mike Thyson</h3>
+                        <p class="indentity">Example City</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="TESTIMONIALS__item">
+                  <div class="TESTIMONIALS__text">
+                    <blockquote>
+                      <p class="text__lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores
+                        molestias adipisci dolor sit amet!.
+                      </p>
+                    </blockquote>
+                    <div class="author d-flex align-self-center">
+                      <div class="img__author">
+                        <img src="./img/au2.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="people__infor align-self-center">
+                        <h3>Laura gill</h3>
+                        <p class="indentity">Example City</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="TESTIMONIALS__item">
+                  <div class="TESTIMONIALS__text">
+                    <blockquote>
+                      <p class="text__lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores
+                        molestias adipisci dolor sit amet!.
+                      </p>
+                    </blockquote>
+                    <div class="author d-flex align-self-center">
+                      <div class="img__author">
+                        <img src="./img/au3.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="people__infor align-self-center">
+                        <h3>Smith Johnson</h3>
+                        <p class="indentity">Example City</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="contact py-5">
+      <div class="container py-md-4 py-3">
+        <div class="row my-lg-4 mt-4">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="submit mx-auto">
+              <div class="header__contact text-center">
+                <h3 class="hn-title">Stay Updated!</h3>
+                <p class="my-3">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut
+                  rhoncus turpis sodales quis. Integer sit amet mattis quam.
+                </p>
+              </div>
+              <form action="" class="mt-5 pt-2">
+                <div class="d-flex justify-content-between">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email..."
+                  />
+                  <button class="btn btn-success m-0 btn-style">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container py-lg-3 poochare__footer">
+        <div class="row">
+          <div class="col-lg-6 col-md-5 mt-5">
+            <h6 class="footer__title">Contact information</h6>
+            <ul class="adrress">
+              <li>
+                <p>
+                  <strong>Address</strong> : #135 block, Barnard St. Brooklyn,
+                  London 10036, UK
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Phone</strong> :
+                  <a href="tel:+12 234-11-24"> +(12)234-11-24</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Email</strong> :
+                  <a href="mailto:example@mail.com"> example@mail.com</a>
+                </p>
+              </li>
+            </ul>
+            <div class="soical-footer mt-3">
+              <ul class="soical-icons">
+                <li class="facebook">
+                  <a href="#">
+                    <span class="fab fa-facebook-f"></span>
+                  </a>
+                </li>
+                <li class="facebook">
+                  <a href="#">
+                    <span class="fab fa-twitter"></span>
+                  </a>
+                </li>
+                <li class="facebook">
+                  <a href="#">
+                    <span class="fab fa-dribbble"></span>
+                  </a>
+                </li>
+                <li class="facebook">
+                  <a href="#">
+                    <span class="fab fa-google"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-7">
+            <div class="row">
+              <div class="col-sm-4 mt-5 col-6">
+                <div class="achives">
+                  <h6 class="footer__title">Archives</h6>
+                  <ul>
+                    <li><a href="#">December 2020 </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 mt-5 col-6">
+                <div class="Categories">
+                  <h6 class="footer__title">Categories</h6>
+                  <ul>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Pets</a></li>
+                    <li><a href="#">Pets care</a></li>
+                    <li><a href="#">Uncategorized</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 mt-5 col-6">
+                <div class="Meta">
+                  <h6 class="footer__title">Meta</h6>
+
+                  <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entries feed</a></li>
+                    <li><a href="#">Comments feed</a></li>
+                    <li><a href="#">WordPress.org</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyrights py-lg-4 mt-5">
+        <div class="container copyrights">
+          <p class="text-center m-0">
+            © 2023 All Rights Reserved by
+            <a href="#">W3Layouts</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button id="movetop" onclick="topFunction()" title="Go to top">
+      <span class="fa fa-angle-up"></span>
+    </button>
+
+    
+     
+
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./owlcarosel/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- fixed top -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+    </script>
+    <!-- carrosusel onw -->
+    <script>
+      $(".owl-one").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <!-- carrosel tow -->
+    <script>
+      $(".owl-tow").owlCarousel({
+        loop: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplay: false,
+        margin: 20,
+
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+    <script src="./counting up/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+    <!-- popup -->
+    <script src="./popup/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
+    </script>
+    <!-- backtotop -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+    
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
